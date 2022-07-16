@@ -39,19 +39,18 @@ public class SumOfTwoValues {
     }
 
     private static boolean findSumOfTwo(int[] array, int sumToBeFound) {
-        // rewrite the array to the hash set
+        boolean possible = false;
         Set<Integer> set = new HashSet<>();
+
+        // rewrite the array to the hash set
+        // while iterating over the array, check if the set contains sumToBeFound-currentValue
         for(int number : array){    // O(n)
+            possible = set.contains(sumToBeFound - number);      // O(1)
+            System.out.println(number + " is possible with " +sumToBeFound+": " + possible);
+            if (possible) break;
             set.add(number);        // O(1)
         }
 
-        boolean possible = false;
-        // while iterating over the set, check if the set contains sumToBeFound-currentValue
-        for(int value : set){       // O(n)
-            possible = set.contains(sumToBeFound - value) && (sumToBeFound-value) != value;      // O(1)
-            System.out.println(value + " is possible with " +sumToBeFound+": " + possible);
-            if (possible) break;
-        }
         return possible;
     }
 }
