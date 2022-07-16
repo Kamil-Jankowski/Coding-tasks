@@ -23,3 +23,10 @@ Given two sorted linked lists, merge them so that the resulting linked list is a
 *Runtime Complexity*: Linear, _O(m+n)_ where _m_ and _n_ are lengths of both linked lists
 
 *Memory Complexity*: Constant, _O(1)_
+
+=== Task 4: Copy linked list with arbitrary pointer
+You are given a linked list where the node has two pointers. The first is the regular next pointer. The second pointer is called arbitrary_pointer and it can point to any node in the linked list. Your job is to write code to make a deep copy of the given linked list. Here, deep copy means that any operations on the original list (inserting, modifying and removing) should not affect the copied list.
+
+*Runtime Complexity*: Linear, _O(n)_
+
+*Memory Complexity*: Linear, _O(n)_
