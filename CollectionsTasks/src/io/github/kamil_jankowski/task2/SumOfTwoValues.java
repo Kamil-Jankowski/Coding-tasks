@@ -1,19 +1,29 @@
 package io.github.kamil_jankowski.task2;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SumOfTwoValues {
     public static void main(String[] args) {
         System.out.println("Task 2: Sum of two values");
 
         int[] numbers = initializeArray();
 
-        int possibleTargetSum = 10;
-        int notPossibleTargetSum = 19;
+        final boolean sumOfTwoTrue1 = findSumOfTwo(numbers, 10);
+        System.out.println("_");
+        final boolean sumOfTwoTrue2 = findSumOfTwo(numbers, 3);
+        System.out.println("_");
+        final boolean sumOfTwoTrue3 = findSumOfTwo(numbers, 7);
+        System.out.println("_");
+        final boolean sumOfTwoFalse1 = findSumOfTwo(numbers, 2);
+        System.out.println("_");
+        final boolean sumOfTwoFalse2 = findSumOfTwo(numbers, 19);
 
-        final boolean sumOfTwoTrue = findSumOfTwo(numbers, possibleTargetSum);
-        final boolean sumOfTwoFalse = findSumOfTwo(numbers, notPossibleTargetSum);
-
-        System.out.println("Target sum = 10 possible: " + sumOfTwoTrue);
-        System.out.println("Target sum = 19 possible: " + sumOfTwoFalse);
+        System.out.println("Target sum = 10 possible: " + sumOfTwoTrue1);
+        System.out.println("Target sum = 2 possible: " + sumOfTwoFalse1);
+        System.out.println("Target sum = 3 possible: " + sumOfTwoTrue2);
+        System.out.println("Target sum = 7 possible: " + sumOfTwoTrue3);
+        System.out.println("Target sum = 19 possible: " + sumOfTwoFalse2);
     }
 
     private static int[] initializeArray() {
@@ -29,7 +39,19 @@ public class SumOfTwoValues {
     }
 
     private static boolean findSumOfTwo(int[] array, int sumToBeFound) {
-        //TODO: Write - Your - Code
-        return false;
+        // rewrite the array to the hash set
+        Set<Integer> set = new HashSet<>();
+        for(int number : array){    // O(n)
+            set.add(number);        // O(1)
+        }
+
+        boolean possible = false;
+        // while iterating over the set, check if the set contains sumToBeFound-currentValue
+        for(int value : set){       // O(n)
+            possible = set.contains(sumToBeFound - value) && (sumToBeFound-value) != value;      // O(1)
+            System.out.println(value + " is possible with " +sumToBeFound+": " + possible);
+            if (possible) break;
+        }
+        return possible;
     }
 }
