@@ -1,7 +1,8 @@
-package io.github.kamil_jankowski.Task1;
+package io.github.kamil_jankowski.task1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MissingNumber {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class MissingNumber {
 
         int[] positiveNumbers = initialize();
 
-        List<Integer> positiveNumbers2 = new ArrayList<>(5);
+        List<Integer> positiveNumbers2 = new ArrayList<>();
         positiveNumbers2.add(4);
         positiveNumbers2.add(1);
         positiveNumbers2.add(5);
@@ -18,7 +19,10 @@ public class MissingNumber {
         int missingNumber = findMissingNumber(positiveNumbers);
         int missingNumber2 = findMissingNumber(positiveNumbers2);
 
-        System.out.printf("Missing numbers are:\n - missing number 1: %s\n - missing number 2: %s", missingNumber, missingNumber2);
+        System.out.printf("Missing numbers are:\n - missing number 1: %s\n - missing number 2: %s\n\n", missingNumber, missingNumber2);
+
+        for (int n = 0; n < 10; ++n)
+            test(100000);
     }
 
     private static int[] initialize() {
@@ -79,4 +83,24 @@ public class MissingNumber {
 
         return sumOfAllNumbersFrom1toN - sumOfNumbers;
     }
+
+
+    static void test(int n) {
+        int missing_element = (new Random()).nextInt(n) + 1;
+        List<Integer> v = new ArrayList<>();
+
+        for(int i = 1; i <= n; ++i) {
+            if (i != missing_element)
+                v.add(i);
+        }
+
+        int actual_missing = findMissingNumber(v);
+        System.out.print("Expected Missing = ");
+        System.out.print(missing_element);
+        System.out.print(" Actual Missing = ");
+        System.out.println(actual_missing);
+        System.out.println("Missing Element == Actual Missing : "+ (missing_element == actual_missing));
+    }
+
 }
+
