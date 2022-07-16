@@ -17,3 +17,9 @@ Given an array of integers and a value, determine if there are any two integers 
 
 *Memory Complexity*: Constant, _O(n)_
 
+=== Task 3: Merge two sorted linked lists
+Given two sorted linked lists, merge them so that the resulting linked list is also sorted.
+
+*Runtime Complexity*: Linear, _O(m+n)_ where _m_ and _n_ are lengths of both linked lists
+
+*Memory Complexity*: Constant, _O(1)_
