@@ -7,7 +7,7 @@ class ArbitraryLinkedList {
         this.head = head;
     }
 
-    ArbitraryLinkedList(int[] nodesData){
+    ArbitraryLinkedList(int... nodesData){
         for (int data : nodesData) {
             this.push(data);
         }
