@@ -27,6 +27,7 @@ class ListDuplicator {
             originalCurrentNode = originalCurrentNode.next;
         }
 
-        return new ArbitraryLinkedList(map.get(listToBeCopied.head));
+        final Node copiedListHead = map.get(listToBeCopied.head);
+        return new ArbitraryLinkedList(copiedListHead);
     }
 }
