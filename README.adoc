@@ -30,3 +30,10 @@ You are given a linked list where the node has two pointers. The first is the re
 *Runtime Complexity*: Linear, _O(n)_
 
 *Memory Complexity*: Linear, _O(n)_
+
+=== Task 5: Level Order Traversal of Binary Tree
+Given the root of a binary tree, display the node values at each level. Node values for all levels should be displayed on separate lines. Let’s take a look at the below binary tree.
+
+*Runtime Complexity*: Linear, _O(n)_
+
+*Memory Complexity*: Linear, _O(n)_
