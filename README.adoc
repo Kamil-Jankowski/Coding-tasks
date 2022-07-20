@@ -53,4 +53,9 @@ You are given a dictionary of words and a large input string. You have to find o
 
 *Memory Complexity*: Polynomial, _O(n^2)_
 
-=== Task 8:
+=== Task 8: Reverse Words in a Sentence
+Reverse the order of words in a given sentence (an array of characters).
+
+*Runtime Complexity*: Linear, _O(n)_
+
+*Memory Complexity*: Constant, _O(1)_
