@@ -142,3 +142,10 @@ Example:
 *Runtime Complexity*: Exponential, _O(2^n^)_
 
 *Memory Complexity*: Linear, _O(n)_
+
+=== Task 13: Clone a graph
+Given the root node of a connected graph, clone this graph by creating its deep copy so that the cloned graph has the same vertices and edges as the original graph.
+
+*Runtime Complexity*: Linear, _O(n)_
+
+*Memory Complexity*: Logarithmic, _O(n)_
