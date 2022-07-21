@@ -96,3 +96,17 @@ Here we need to find the _K^th^_ permutation.
 *Runtime Complexity*: Linear, _O(n)_
 
 *Memory Complexity*: Linear, _O(n)_
+
+=== Task 11: Find all subsets of a given set of integers
+We are given a set of integers and we have to find all the possible subsets of this set of integers. The following example elaborates on this further.
+
+Given set of integers:
+`2 3 4`
+
+All possible subsets for the given set of integers:
+
+`_` `2` `3` `2, 3` `4` `2, 4` `3, 4`, `2, 3, 4`
+
+*Runtime Complexity*: Exponential, _O(2^n^*n)_
+
+*Memory Complexity*: Exponential, _O(2^n^*n)_
