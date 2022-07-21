@@ -16,12 +16,12 @@ class Result {
      *
      * Sample input:
      * "*|**|*|*|****" or "|**|*|*"
-     * 2
-     *
-     * 1
-     * 1
-     * 5
-     * 6
+     * 2 -> amount of starting indices
+     * 1 -> start index
+     * 1 -> start index
+     * 2 -> amount of end indices
+     * 5 -> end index
+     * 6 -> end index
      */
 
     public static List<Integer> numberOfItems(String s, List<Integer> startIndices, List<Integer> endIndices) {
