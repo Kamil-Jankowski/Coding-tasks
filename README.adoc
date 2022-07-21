@@ -110,3 +110,35 @@ All possible subsets for the given set of integers:
 *Runtime Complexity*: Exponential, _O(2^n^*n)_
 
 *Memory Complexity*: Exponential, _O(2^n^*n)_
+
+=== Task 12: Print balanced brace combinations
+Print all braces combinations for a given value n so that they are balanced.
+
+Example:
+
+- n=1
++
+|===
+|{}
+|===
+
+- n=2
++
+|===
+|{{}}
+|{}{}
+|===
+
+- n=3
++
+|===
+|{{{}}}
+|{}{{}}
+|{{}{}}
+|{{}}{}
+|{}{}{}
+|===
+
+*Runtime Complexity*: Exponential, _O(2^n^)_
+
+*Memory Complexity*: Linear, _O(n)_
