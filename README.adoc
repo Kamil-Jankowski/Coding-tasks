@@ -15,7 +15,7 @@ Given an array of integers and a value, determine if there are any two integers 
 
 *Runtime Complexity*: Linear, _O(n)_
 
-*Memory Complexity*: Constant, _O(n)_
+*Memory Complexity*: Linear, _O(n)_
 
 === Task 3: Merge two sorted linked lists
 Given two sorted linked lists, merge them so that the resulting linked list is also sorted.
@@ -48,10 +48,10 @@ Given a Binary Tree, figure out whether it’s a Binary Search Tree. In a binary
 === Task 7: String segmentation
 You are given a dictionary of words and a large input string. You have to find out whether the input string can be completely segmented into the words of a given dictionary.
 
-*Runtime Complexity*: Exponential, _O(2^n)_ (with only recursion)
-*Runtime Complexity*: Polynomial, _O(n^2)_ (with memoization)
+*Runtime Complexity*: Exponential, _O(2^n^)_ (with only recursion)
+*Runtime Complexity*: Polynomial, _O(n^2^)_ (with memoization)
 
-*Memory Complexity*: Polynomial, _O(n^2)_
+*Memory Complexity*: Polynomial, _O(n^2^)_
 
 === Task 8: Reverse Words in a Sentence
 Reverse the order of words in a given sentence (an array of characters).
@@ -61,7 +61,7 @@ Reverse the order of words in a given sentence (an array of characters).
 *Memory Complexity*: Constant, _O(1)_
 
 === Task 9: Coin Changing Problem
-Suppose we have coin denominations of [1, 2, 5] and the total amount is 7. We can make changes in the following 6 ways:
+Suppose we have coin denominations of `1, 2, 5` and the total amount is 7. We can make changes in the following 6 ways:
 |===
 |Number of ways to make a change
 
@@ -74,5 +74,25 @@ Suppose we have coin denominations of [1, 2, 5] and the total amount is 7. We ca
 |===
 
 *Runtime Complexity*: Quadratic, _O(m*n)_ [m - number of denominations, n - total amount]
+
+*Memory Complexity*: Linear, _O(n)_
+
+=== Task 10: Find Kth Permutation
+Given a set of _n_ elements, find their _K^th^_ permutation. Consider the following set of elements:
+
+`1, 2, 3`
+
+All permutations of the above elements are (with ordering):
+|===
+|1^st^|123
+|2^nd^|132
+|3^rd^|213
+|4^th^|231
+|5^th^|312
+|6^th^|321
+|===
+Here we need to find the _K^th^_ permutation.
+
+*Runtime Complexity*: Linear, _O(n)_
 
 *Memory Complexity*: Linear, _O(n)_
