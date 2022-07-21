@@ -26,12 +26,13 @@ class Result {
 
     public static List<Integer> numberOfItems(String s, List<Integer> startIndices, List<Integer> endIndices) {
         List<Integer> numberOfItems = new ArrayList<>();
-        // TODO: additionally, it would be good to verify which list is shorter, to avoid receiving index out of bound ex.
+        int minimalSize = Math.min(startIndices.size(), endIndices.size());
         StringBuilder sb = new StringBuilder(s);
-        for (int i = 0; i < startIndices.size(); i++){
-            // create substring for a given pair of indices
+
+        for (int i = 0; i < minimalSize; i++){
+            // Create substring for a given pair of indices
             final String substring = sb.substring(startIndices.get(i), endIndices.get(i));
-            // count the amount of items in closed compartments
+            // Count the amount of items in closed compartments
             int counter = 0;
 
             int start = 0;
