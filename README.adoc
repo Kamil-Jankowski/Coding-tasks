@@ -158,3 +158,10 @@ TIP: The array length can be in the millions with many duplicates.
 *Runtime Complexity*: Logarithmic, _O(log n)_
 
 *Memory Complexity*: Constant, _O(1)_
+
+=== Task 15: Search Rotated Array
+Search for a given number in a sorted array, with unique elements, that has been rotated by some arbitrary number. Return -1 if the number does not exist. Assume that the array does not contain duplicates.
+
+*Runtime Complexity*: Logarithmic, _O(log n)_
+
+*Memory Complexity*: Logarithmic, _O(log n)_
