@@ -148,4 +148,13 @@ Given the root node of a connected graph, clone this graph by creating its deep 
 
 *Runtime Complexity*: Linear, _O(n)_
 
-*Memory Complexity*: Logarithmic, _O(n)_
+*Memory Complexity*: Logarithmic, _O(log n)_
+
+=== Task 14: Find Low/High Index
+Given a sorted array of integers, return the low and high index of the given key. You must return -1 if the indexes are not found.
+
+TIP: The array length can be in the millions with many duplicates.
+
+*Runtime Complexity*: Logarithmic, _O(log n)_
+
+*Memory Complexity*: Constant, _O(1)_
