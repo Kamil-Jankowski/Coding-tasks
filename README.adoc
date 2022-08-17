@@ -165,3 +165,35 @@ Search for a given number in a sorted array, with unique elements, that has been
 *Runtime Complexity*: Logarithmic, _O(log n)_
 
 *Memory Complexity*: Logarithmic, _O(log n)_
+
+== Demo exam tasks
+
+=== Task 1:
+Complete the `processLogs` function below.
+
+The function is expected to return a STRING_ARRAY.
+The function accepts following parameters:
+
+. STRING_ARRAY logs
+. INTEGER threshold
+
+=== Task 2:
+Create a method that counts enclosed (between "|") items (*).
+
+The function is expected to return an INTEGER_ARRAY.
+The function accepts following parameters:
+
+. STRING s
+. INTEGER_ARRAY startIndices
+. INTEGER_ARRAY endIndices
+
+Program reads input from the console in following format:
+
+* \*|\**|\*|*|\**\** or |\**|*|*
+* 2 -> amount of starting indices
+* 1 -> start index
+* 1 -> start index
+* 2 -> amount of end indices
+* 5 -> end index
+* 6 -> end index
+
